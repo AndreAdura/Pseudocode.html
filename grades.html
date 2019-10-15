@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function Grade(){
+				var sum = 0;
+				var a = parseInt(document.getElementById('a').value);
+				var b = parseInt(document.getElementById('b').value);
+				var c = parseInt(document.getElementById('c').value);
+
+				sum = a+b+c/3;
+
+				document.getElementById('sum').innerHTML = 'YOUR GRADE IS' + " " +  sum;
+
+				if (sum >= 60) {alert("Pass");
+			} else{ alert("Fail");}
+
+			}
+
+
+
+
+
+		</script>
+	</head>
+	<body>
+		<h1>
+			GRADE CALCULATION
+		</h1>
+<label>Grade A</label>
+<input id="a" type="number" name="A">
+
+<label>Grade B</label>
+<input id="b" type="number" name="A">
+
+<label>Grade C</label>
+<input id="c" type="number" name="A">
+
+<button onclick="Grade()" >Calculate</button>
+<p id="sum"></p>
+
+<br>
+<hr>
+<h1>Pseudocode</h1>
+<h2>DECLARE</h2>
+<ul>
+	<li>Grade 1 = INPUT</li>
+	<li>Grade 2 = INPUT</li>
+	<li>Grade 3 = INPUT</li>
+	<li>Average </li>
+	<li>Status </li>
+
+
+</ul>
+<br>
+<hr>
+<H2>INPUT</H2>
+<p>Input Grades</p>
+<br>
+<hr>
+<h2>Process - STEP 1</h2>
+<H3>CALCULATE THE AVERAGE</H3>
+<P>AVERAGE = GRADE 1 + GRADE 2 + GRADE 3 / 3</P>
+<br>
+<H2>Process - STEP 2</H2>
+<h3>DEFINE THE STATUS</h3>
+<p>if(Average >= 60) {Status = "Pass"}</p>
+<p>Else{Status = Fail}</p>
+<br>
+<hr>
+<H2>OUTPUT</H2>
+<p>Print Status</p>
+<p>Print Average</p>
+
+
+
+
+
+
+	</body>
+</html>
